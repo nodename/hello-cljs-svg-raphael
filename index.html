@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Hello-cljs-svg-raphael : " />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Hello-cljs-svg-raphael</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/nodename/hello-cljs-svg-raphael">View on GitHub</a>
+
+          <h1 id="project_title">Hello-cljs-svg-raphael</h1>
+          <h2 id="project_tagline"></h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/nodename/hello-cljs-svg-raphael/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/nodename/hello-cljs-svg-raphael/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>hello-cljs-svg-raphael</h1>
+
+<p>This is my second SVG program.
+It draws a circle by calling Raphael library functions from ClojureScript.
+It is set up as a leiningen and Counterclockwise project (see <a href="https://github.com/cemerick" class="user-mention">@cemerick</a>'s video: <a href="http://www.youtube.com/watch?v=VVd4ow-ZcX0">http://www.youtube.com/watch?v=VVd4ow-ZcX0</a>)</p>
+
+<h2>Usage</h2>
+
+<p>Build: from a shell prompt anywhere within the project:</p>
+
+<p>% lein repl</p>
+
+<p>user=&gt; (require 'cljs.closure)</p>
+
+<p>user=&gt; (cljs.closure/build "src/cljs"
+       {:output-to "resources/public/hello.js"
+       :optimizations :advanced
+       :externs ["resources/jslib/raphael-externs.js"]})</p>
+
+<p>Note that the externs file specifies the variable names that are not to be munged
+by the Google Closure minification invoked by advanced optimization.
+It gives them default definitions (not the real ones!).</p>
+
+<p>View: open resources/public/hello.html in a browser.</p>
+
+<h2>License</h2>
+
+<p>Distributed under the Eclipse Public License, the same as Clojure.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Hello-cljs-svg-raphael maintained by <a href="https://github.com/nodename">nodename</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
