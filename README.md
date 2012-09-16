@@ -18,7 +18,7 @@ user=> (cljs.closure/build "src/cljs"
        :externs ["resources/jslib/raphael-externs.js"]})
        
 Note that the externs file specifies the variable names that are not to be munged
-by the Google Closure minification invoked by advanced optimization.
+by the Google Closure minification invoked by ClojureScript optimization.
 It gives them default definitions (not the real ones!).
        
 View: open resources/public/hello.html in a browser.
